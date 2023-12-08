@@ -1,0 +1,21 @@
+.Vertex {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -0.5rem;
+    margin-top: -0.5rem;
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 1rem;
+    z-index: 1;
+}
+
+.Vertex.container {
+    position: fixed;
+}
+
+.Vertex-Selected {
+    border-width: 0.2rem;
+    border-style: solid;
+}
