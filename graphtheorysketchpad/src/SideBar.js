@@ -26,6 +26,7 @@ function SideBar(props) {
         {name: 'New Edge', onClickAction: ClickAction.ADD_EDGE},
         {name: 'New Directed Edge', onClickAction: ClickAction.ADD_DIRECTED_EDGE},
         {name: 'Delete', onClickAction: ClickAction.DELETE},
+        {name: 'Clear', onClickAction: ClickAction.CLEAR },
         {name: 'Color', onClickAction: ClickAction.COLOR}
     ]
 

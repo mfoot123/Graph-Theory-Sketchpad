@@ -4,6 +4,7 @@ const ClickAction = {
     ADD_EDGE: "AddEdge",
     ADD_DIRECTED_EDGE: "AddDirectedEdge",
     DELETE: "Delete",
+    CLEAR: "Clear",
     COLOR: "Color"
     
 }

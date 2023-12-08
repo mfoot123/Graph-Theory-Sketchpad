@@ -40,6 +40,11 @@ function Field(props) {
         setVertices(vertexCopy);
     }
 
+    const removeAllVertices = () => {
+        setVertices([]);
+        setEdges([]); // Optionally, you may want to clear edges as well when clearing vertices.
+      };
+
     const colorVertex = (index, color) => {
         const copy = [...vertices];
         copy[index].color = color;
@@ -87,6 +92,8 @@ function Field(props) {
             startAddDirectedEdge(index)
         } else if (clickAction === ClickAction.DELETE) {
             removeVertex(index)
+        } else if (clickAction === ClickAction.CLEAR) {
+            removeAllVertices()
         } else if (clickAction === ClickAction.COLOR) {
             colorVertex(index, color)
         }
