@@ -3,6 +3,7 @@ import './SideBar.css'
 import SideBarButton from "./SideBarButton";
 import ClickAction from "./ClickAction";
 import {SketchPicker} from "react-color";
+import ColorPicker from "./ColorPicker";
 
 function SideBar(props) {
     const {clickAction, setClickAction, color, setColor} = props
@@ -31,10 +32,7 @@ function SideBar(props) {
     return (
         <div className="SideBar">
             {buttonData.map(element => makeButton(element))}
-            <SketchPicker
-                color={color}
-                onChange={(color, event) => setColor(color.hex)}
-                width='91%'/>
+            <ColorPicker color={color} onChange={(color, event) => setColor(color.hex)} width='91%'/>
             {/* <InfoBox
                 numVertices={numVertices()}
                 numEdges={numEdges()}
