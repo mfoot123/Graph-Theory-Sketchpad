@@ -1,4 +1,9 @@
+/* Update the Field.css */
 .Field {
-    height: 100%;
-    width: 100%;
-}
+    position: absolute;
+    left: 0; /* Adjust the sidebar width */
+    top: 11rem;
+    right: 0;
+    bottom: 0;
+    display: flex; /* Display the Field horizontally */
+  }

@@ -77,11 +77,12 @@ function Field(props) {
 
     const onMouseDown = (event) => {
         if (clickAction === ClickAction.ADD_VERTEX) {
-            const x = event.clientX;
-            const y = event.clientY;
-            addVertex({position: [x, y], color: color});
+          // Use clientX and clientY to get the position of the click
+          const x = event.clientX - root.current.offsetLeft;
+          const y = event.clientY - root.current.offsetTop;
+          addVertex({ position: [x, y], color: color });
         }
-    }
+      }
 
     const onVertexMouseDown = (event, index) => {
         if (clickAction === ClickAction.SELECT) {

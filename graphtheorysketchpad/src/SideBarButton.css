@@ -1,15 +1,17 @@
+/* ColorPicker.css */
 .SideBarButton {
-    width: 100%;
-    margin-bottom: 1rem;
+    display: flex;
+    align-items: center; /* Center the content vertically */
+    height: 10px;
     border-radius: 10px;
     padding: 2%;
-    margin-top: 3%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: .15rem;
-    
-}
-
-.SideBarButton-Name {
-    width: 100%;
-}
+    color: white;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .SideBarButton-Name {
+    margin-left: 1px; /* Add margin or adjust as needed */
+    color: black;
+  }
+  
