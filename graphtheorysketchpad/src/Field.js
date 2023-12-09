@@ -143,10 +143,13 @@ function Field(props) {
 
     const onMouseMove = (event) => {
         if (dragging !== null) {
-            event.preventDefault()
-            moveVertex(dragging, [event.clientX, event.clientY])
+          event.preventDefault();
+          // Adjust the position based on the offset of the root element
+          const x = event.clientX - root.current.offsetLeft;
+          const y = event.clientY - root.current.offsetTop;
+          moveVertex(dragging, [x, y]);
         }
-    }
+      }
 
     const numVertices = () => {
         return vertices.length
