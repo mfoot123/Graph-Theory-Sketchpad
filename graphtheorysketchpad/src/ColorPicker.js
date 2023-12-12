@@ -1,11 +1,10 @@
-// ColorPicker.js
 import React, { useState } from 'react';
 import { SketchPicker } from 'react-color';
 import './ColorPicker.css';
 
 const ColorPicker = ({ initialColor, onChange, onSwatchClick }) => {
   const [displayColorPicker, setDisplayColorPicker] = useState(false);
-  const [color, setColor] = useState(initialColor || { r: 0, g: 0, b: 0, a: 1 }); // Set default to black
+  const [color, setColor] = useState(initialColor || { r: 0, g: 0, b: 0, a: 1 });
 
   const handleClick = () => {
     setDisplayColorPicker(!displayColorPicker);

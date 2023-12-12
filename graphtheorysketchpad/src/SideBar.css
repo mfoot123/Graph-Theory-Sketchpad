@@ -1,18 +1,18 @@
 .SideBar {
     display: flex;
     flex-direction: row;
-    justify-content: center; /* Center the items horizontally */
-    align-items: center; /* Center the items vertically */
-    height: 150px; /* Adjust to 'auto' for dynamic height based on content */
-    width: 100%; /* Updated to 100% */
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    width: 100%;
     background: linear-gradient(217deg, rgba(230, 100, 101, 0.9), rgba(230, 100, 101, 0) 70.71%),
                 linear-gradient(127deg, rgba(145, 152, 229, 0.9), rgba(145, 152, 229, 0) 70.71%);
     border-width: 2px;
     border-right-style: solid;
-    border-right-color: white; /* Updated to white */
+    border-right-color: white;
     padding: 1rem;
     flex-shrink: 0;
-    backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
-    border-bottom-left-radius: 10px; /* Adjust the radius as needed */
-    border-bottom-right-radius: 10px; /* Adjust the radius as needed */
+    backdrop-filter: blur(10px);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }

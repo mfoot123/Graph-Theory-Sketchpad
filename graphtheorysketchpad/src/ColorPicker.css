@@ -1,9 +1,8 @@
-/* ColorPicker.css */
 .ColorPicker {
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center; /* Center vertically */
+    align-items: center;
     cursor: pointer;
     border-radius: 10px;
     padding: 2%;
@@ -12,7 +11,7 @@
   
   .colorButton {
     width: 100%;
-    height: 75px; /* Adjust the height as needed */
+    height: 75px;
   }
   
   .swatch {
